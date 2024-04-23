@@ -1,0 +1,1584 @@
+/* skjuler nogle små default knapper oppe i venstre hjørne */
+button {
+    background-color: black;
+    border: none;
+}
+
+/* generelt */
+body{
+    background-image: url("img/space.jpg");
+    background-size: cover;
+}
+
+.fremad_alle{
+    width: 6%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.astronaut_mini{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 11.5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.tilbage_alle{
+    width: 6%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10em;
+    margin-bottom: 2em;
+}
+
+/* rumskiet der flyver ind over siden */
+#rocket {
+    width: 65%;
+    position: fixed;
+    left: -100%;
+    top: -6%;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes flyRocket {
+    0% {
+        left: -100%; /* Starter uden for venstre side af browseren */
+    }
+    100% {
+        left: 100%; /* Ender uden for højre side af browseren */
+    }
+}
+
+#merkur, #venus, #jorden, #rumstation, #mars, #jupiter, #saturn, #uranus, #neptun, #slut {
+    animation: fadeinPlanet 2s;
+}
+
+@keyframes fadeinPlanet {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* for alle frames med planeter */
+.planet_alle{
+    padding: 0 15%;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
+    z-index: -1;
+    margin-top: 3%;
+}
+
+.tekst_alle{
+    text-align: left;
+    font-family: oxanium;
+    font-size: 18pt;
+    padding: 0 4% 0 5%;
+    max-width: 90%;
+}
+
+.boks_alle{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%;
+    margin-top: 25%;
+}
+
+
+
+/* index */
+#overskrift_index{
+    color: white;
+    font-family: oxanium;
+    font-weight: 500;
+    font-size: 50pt;
+}
+
+#afspil1{
+    width: 13%;
+}
+
+#div_index{
+    margin: auto;
+    text-align: center;
+    padding: 15% 0;
+}
+
+#underoverskrift{
+    color: white;
+    font-family: oxanium;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+
+/* solen */
+#solen_solen{
+    padding: 0 15%;
+    margin-top: -7%;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: -1;
+}
+
+#tekst_solen{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 20pt;
+}
+
+#boks_solen{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%;
+    margin-top: 25%;
+}
+
+
+
+/* exo */
+.astronaut_exo_slut{
+    position: fixed;
+    width: 28%;
+    left: 0;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.tekst_exo{
+    font-family: oxanium;
+    font-size: 18pt;
+    font-weight: 300;
+    max-width: 85%;
+    margin: 8% auto;
+    line-height: 2em;
+}
+
+.boks_exo{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin: 5% 10% 0 auto; 
+    width: 55%;
+    border-radius: 10px;
+}
+
+.trekant_exo{
+    position: fixed;
+    width: 3%;
+    z-index: -1;
+    margin: 5.1% 10% 0 32.8%;
+}
+
+/* merkur */
+#fremad_merkur{
+    position: relative;
+    float: right;
+    margin: -2% 1.5% 1.5% 0;
+    width: 4%;
+}
+
+#tilbage_merkur{
+    position: relative;
+    float: left;
+    margin: -2% 0 1.5% 1.5%;
+    width: 4%;
+}
+
+
+/* merkur2 */
+/* her er ikke andre ting end dem som er generelle for alle */
+
+
+
+/* venus */
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1%;
+    margin-top: 4%;
+}
+
+#tekst_venus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    font-family: oxanium;
+}
+
+.boks_venus{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%;
+    margin-top: 17%;
+}
+
+
+/* jorden */
+#fremad_jorden{
+    position: relative;
+    float: right;
+    margin: -2% 1.5% 1.5% 0;
+    width: 4%;
+}
+
+#tilbage_jorden{
+    position: relative;
+    float: left;
+    margin: -2% 0 1.5% 1.5%;
+    width: 4%;
+}
+
+
+/* jorden2 */
+#info_jorden{
+    width: 4%;
+    position: relative;
+    float: right;
+    margin: -14% 1% 0 0;
+}
+
+#info_exop{
+    border: dashed #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%;
+    margin-top: 19%;
+    font-family: oxanium;
+    font-size: 18pt;
+    padding: 1% 4% 1% 5%;
+    height: 32%;
+    line-height: 2em;
+    z-index: 10;
+    display: none;
+}
+
+#info_luk{
+    position: relative;
+    float: right;
+    bottom: 0;
+    width: 2%;
+    height: 5%;
+}
+
+#sattelit2{
+    position: absolute;
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 5%;
+    transform: rotate(-25deg);
+}
+
+#sattelit3{
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 13%;
+    margin-right: 5%;
+    transform: rotate(-35deg);
+}
+
+#sattelit4{
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+    margin-bottom: 19%;
+    margin-left: 5%;
+    transform: rotate(-90deg);
+}
+
+#sattelit4_mini{
+    position: absolute;
+    width: 7%;
+    right: 0;
+    margin-top: 2%;
+    margin-right: 20%;
+    transform: rotate(-65deg);
+}
+
+#sattelit5{
+    position: absolute;
+    width: 10%;
+    margin-right: 8%;
+    margin-top: 10%;
+    right: 0;
+}
+
+#sattelit6{
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    margin-left: 9%;
+    margin-bottom: 1%;
+    transform: rotate(20deg);
+}
+
+#sattelitvinge{
+    position: absolute;
+    width: 13%;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5%;
+    margin-right: 20%;
+    transform: rotate(105deg);
+}
+
+
+
+/* den internationale rumstation */
+.boks_rumstation{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%;
+    margin-top: 2%;
+}
+
+.tekst_rumstation{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 18pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+#rumstation1{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 54%;
+    margin-top: 7%;
+    transform: rotate(2deg);
+    z-index: -1;
+}
+
+/* mars */
+#fremad_mars{
+    position: relative;
+    float: right;
+    margin: -2% 1.5% 1.5% 0;
+    width: 4%;
+}
+
+#tilbage_mars{
+    position: relative;
+    float: left;
+    margin: -2% 0 1.5% 1.5%;
+    width: 4%;
+}
+
+/* mars2 */
+#video_mars{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* mini quiz 1 & 2 */
+    /* begge */
+.tekst_quiz{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 18pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+.boks_quiz{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%;
+    margin-top: 8%;
+}
+
+.overskrift_quiz{
+    text-align: center;
+    font-family: oxanium;
+    font-weight: 600;
+    font-size: 50pt;
+}
+
+    /* quiz1 */
+.button_quiz1 {
+    background-color: #85F2FA;
+    font-family: oxanium;
+    border: none;
+    text-align: center;
+    font-size: 18pt;
+    padding: 1% 0;
+    width: 20%;
+}
+
+.button_quiz1_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.options{
+    font-family: oxanium;
+}
+
+#spørgsmål_quiz1{
+    font-family: oxanium;
+    text-align: center;
+    font-size: 18pt;
+    line-height: 1.8em;
+}
+
+#svarmuligheder{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    gap: 30%;
+    font-size: 18pt;
+    line-height: 3em;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    margin: auto;
+}
+
+
+    /* quiz2 */
+
+#button_quiz2 {
+    background-color: #85F2FA;
+    font-family: oxanium;
+    border: none;
+    text-align: center;
+    font-size: 18pt;
+    padding: 1% 0;
+    width: 20%;
+}
+
+.svar-muligheder{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Oxanium;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+        /* Keyboard + tekstfelt */
+        /* Tekstfelt */
+    #use-keyboard-input{
+        padding: 0.5rem;
+        width: 300px;
+        font-size: 1.2rem;
+        text-align: center; 
+        font-family: oxanium;
+    }
+    
+    .tekstboks{
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+    
+    
+    
+        /* Keybord */
+    .keyboard {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: #33b6b0;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        user-select: none;
+        transition: bottom 0.4s;
+    }
+    
+    .keyboard--hidden {
+        bottom: -100%;
+    }
+    
+    .keyboard__keys {
+        text-align: center;
+    }
+    
+    .keyboard__key {
+        height: 45px;
+        width: 6%;
+        max-width: 90px;
+        margin: 3px;
+        border-radius: 4px;
+        border: none;
+        background: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-family: oxanium;
+        outline: none;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+    }
+    
+    .keyboard__key:active {
+        background: #ffffff1f;
+    }
+    
+    .keyboard__key--wide {
+        width: 12%;
+    }
+    
+    .keyboard__key--extra-wide {
+        width: 36%;
+        max-width: 500px;
+    }
+    
+    .keyboard__key--activatable::after {
+        content: '';
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+    }
+    
+    .keyboard__key--active::after {
+        background: #08ff00;
+    }
+    
+    .keyboard__key--dark {
+        background: rgba(0, 0, 0, 0.25);
+    }
+    
+
+
+
+/* forkert1 og 2 */
+.boks_sorthul{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    margin-left: 5%; 
+    width: 50%;
+    margin-top: 2%;
+}
+
+.tekst_sorthul{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 20pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+.sorthul{
+    background-size: cover;
+    margin-top: -5%;
+    margin-left: -2%;
+    margin-bottom: -2%;
+    z-index: -1;
+}
+
+
+
+
+
+/* fælles for redning og rigtigt svar */
+
+#rigtig1, #rigtig2, #redning1, #redning2, #forkert1, #forkert2 {
+    display: none;
+}
+
+.astronaut_quiz{
+    width: 20%;
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+}
+
+.tale_quiz{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 15pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+.trekant_quiz{
+    position: fixed;
+    left: 0;
+    width: 3%;
+    z-index: -1;
+    margin-top: 21.23%;
+    margin-left: 21.5%;
+}
+
+.boks_redning{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 90%;
+    margin-top: 2%;
+}
+
+.tekst_redning{
+    text-align: left;
+    font-family: oxanium;
+    font-size: 20pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+    /* rigtig */
+.taleboks_quiz_rigtig{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    margin-top: 19%;
+    margin-left: 23%;
+    width: 14%;
+    border-radius: 10px;
+}
+
+    /* redning */
+.taleboks_quiz_redning{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    margin-top: 19%;
+    margin-left: 23%;
+    width: 20%;
+    border-radius: 10px;
+}
+
+/*  asteroide  */
+.boks_asteroide{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    margin-left: 5%; 
+    width: 42%;
+    margin-top: 2%;
+}
+
+.tekst_asteroide{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 20pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+#rumskib{
+    width: 65%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -6%;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+#rumskib {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+    /*  talebobbel asteroide */
+.taleboks_asteroide{
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    top: 32%;
+    right: 10%;
+    width: 13%;
+    border-radius: 10px;
+    height: 6%;
+}
+
+.tale_asteroide{
+    text-align: center;
+    font-family: oxanium;
+    font-size: 13pt;
+    padding: 0 4% 0 5%;
+    max-width: 95%;
+}
+
+.trekant_asteroide{
+    position: fixed;
+    right: 0;
+    width: 3%;
+    z-index: -1;
+    margin-top: 17.7%;
+    margin-right: 21.6%;
+}
+
+
+    /*  sten asteroide */
+#a1{
+    width: 12%;
+    position: fixed;
+    right: 0;
+    top: 5%;
+    margin-right: 22%;
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+
+#a2{
+    width: 10%;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    margin-right: -5%;
+    transform: rotate(106deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a3{
+    width: 5%;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    margin-right: 10%;
+    transform: rotate(21deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a4{
+    width: 3%;
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    margin-right: 20%;
+    transform: rotate(106deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a5{
+    width: 9%;
+    position: fixed;
+    right: 0;
+    bottom: 24%;
+    margin-right: 28%;
+    transform: rotate(120deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a6{
+    width: 3%;
+    position: fixed;
+    right: 0;
+    margin-right: 45%;
+    transform: rotate(106deg);
+    top: 27%;
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a7{
+    width: 9%;
+    position: fixed;
+    left: 42%;
+    top: 37%;
+    transform: rotate(180deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a8{
+    width: 7%;
+    position: fixed;
+    left: 30%;
+    bottom: 15%;
+    transform: rotate(100deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a9{
+    width: 4%;
+    position: fixed;
+    left: 50%;
+    bottom: -2%;
+    transform: rotate(90deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a10{
+    width: 5%;
+    position: fixed;
+    left: 50%;
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a11{
+    width: 5%;
+    position: fixed;
+    left: 28%;
+    top: 12%;
+    transform: rotate(-220deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a12{
+    width: 4%;
+    position: fixed;
+    left: 50%;
+    position: fixed;
+    left: 15%;
+    top: -4%;
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a13{
+    width: 3%;
+    position: fixed;
+    left: 10%;
+    top: 40%;
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a14{
+    width: 9%;
+    position: fixed;
+    left: 5%;
+    bottom: 17%;
+    transform: rotate(-90deg);
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+#a15{
+    width: 5%;
+    position: fixed;
+    left: 12%;
+    bottom: -3%;
+    animation: horizontal-shaking 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(80px) }
+    50% { transform: translateX(-80px) }
+    75% { transform: translateX(80px) }
+    100% { transform: translateX(0) }
+   }
+
+
+
+/* --- solsystemet --- */
+        /* --- start knap --- */
+    #start{
+        color: white;
+        font-family: oxanium;
+        font-weight: 500;
+        font-size: 35pt;
+    }
+
+    #start_boks{
+        background-color: #540800;
+        width: 10%;
+        height: 7%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+
+
+        /* diverse */
+    #tekst_info{
+        color: white;
+        font-family: oxanium;
+        font-weight: 200;
+        font-size: 14pt;
+    }
+
+    #mini_pil{
+        width: 3%;
+        height: 3%;
+    }
+
+    #mini_pil_con{
+        position: fixed;
+        bottom: 1%;
+        left: 2%;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #lyd {
+        position: fixed;
+        right: 2em;
+        top: 2em;
+        width: 5%;
+    }
+
+    #lyd_fra{
+        position: fixed;
+        right: 2em;
+        top: 2em;
+        width: 5%;
+        display: none;
+    }
+
+    #sprog {
+        position: fixed;
+        right: 7em;
+        top: 2em;
+        width: 5%;
+    }
+
+    #sprog_en {
+        position: fixed;
+        right: 7em;
+        top: 2em;
+        width: 5%;
+        display: none;
+    }
+
+        /* --- Ringe --- */
+    .info_otteringe {
+        width: 52%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+        /* --- Flexbox ringe --- */
+    .info_ringe {
+        display: flex;
+        justify-content: center;
+    }
+    
+        /* --- Flexbox planeter og sol --- */
+    .info_solsystem {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .info_sol:hover {
+        width: 20%;
+    }
+    
+    #info_mer:hover {
+        width: 4.5%;
+    }
+    
+    .info_ven:hover {
+        width: 4.8%;
+    }
+    
+    .info_jor:hover {
+        width: 5.2%;
+    }
+    
+    .info_mar:hover {
+        width: 4.8%;
+    }
+    
+    .info_jup:hover {
+        width: 9%;
+    }
+    
+    .info_sat:hover {
+        width: 10%;
+    }
+    
+    .info_ura:hover {
+        width: 6%;
+    }
+    
+    .info_nep:hover {
+        width: 6%;
+    }
+    
+    
+        /* --- Animation med tilhørende keyframe, der får planeterne og sol 
+        til at køre rundt i cirkler mod uret uendeligt --- */
+    
+        /* --- Sol --- */
+    .info_sol {
+        width: 18%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_sol 80s infinite linear;
+    }
+    
+        /* --- Roterer solen 360 grader mod urets retning --- */
+    @keyframes rotation_sol {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+
+    /* --- Infographic --- */
+/* --- Pil frem --- */
+#fremad_info, #fremad_info_mer2, #fremad_info_mer3, #fremad_info_ven1, #fremad_ven1, #fremad_ven2, #fremad_jor1, #fremad_jor2, #fremad_mar1, #fremad_mar2, #fremad_jup1, #fremad_jup2, #fremad_sat1, #fremad_sat2, #fremad_ura1, #fremad_ura2, #fremad_nep1, #fremad_nep2 {
+    position: relative;
+    float: right;
+    margin: -2% 1.5% 2% 0;
+    width: 4%;
+}
+
+/* --- Pil tilbage --- */
+#tilbage_info, #tilbage_info_mer2, #tilbage_info_mer3, #tilbage_info_mer4, #tilbage_ven1, #tilbage_ven2, #tilbage_ven3, #tilbage_jor1, #tilbage_jor2, #tilbage_jor3, #tilbage_mar1, #tilbage_mar2, #tilbage_mar3, #tilbage_jup1, #tilbage_jup2, #tilbage_jup3, #tilbage_sat1, #tilbage_sat2, #tilbage_sat3, #tilbage_ura1, #tilbage_ura2, #tilbage_ura3, #tilbage_nep1, #tilbage_nep2, #tilbage_nep3 {
+    position: relative;
+    float: left;
+    margin: -2% 0 2% 1.5%;
+    width: 4%;
+}
+
+/* --- Pil tilbage til Solsystem --- */
+#tilbage_solsystem, #tilbage_solsystem2, #tilbage_solsystem3, #tilbage_solsystem4, #tilbage_solsystem5, #tilbage_solsystem6, #tilbage_solsystem7, #tilbage_solsystem8 {
+    width: 7%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2em;
+    z-index: 2;
+}
+
+.baggrund_info{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-left: -0.5%;
+}
+
+.tilbage_solsystem_container {
+    display: flex;
+    justify-content: center;
+}
+
+.boks_info {
+    border: solid #6DCAD1 3px;
+    background-color: white;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%;
+    margin-top: 25%;
+    z-index: 2;
+}
+
+.tekst_info{
+    text-align: left;
+    font-family: oxanium;
+    font-size: 18pt;
+    padding: 0 4% 0 5%;
+    max-width: 90%;
+}
+
+.planet_info{
+    padding: 0 15%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 20%;
+    z-index: -1;
+    margin-top: 3%;
+    z-index: 2;
+}
+
+.planet_navn {
+    font-size: 28pt;
+    font-weight: 500;
+    line-height: 2%;
+    color: black;
+    font-family: oxanium;
+    text-align: center;
+}
+
+.planet_container {
+    display: flex;
+    justify-content: center;
+}
+    
+        /* --- Merkur --- */
+    #info_mer {
+        width: 2.5%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_mer 85s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 100px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_mer { 
+        0% { 
+            transform: rotate(35deg)  
+                translateX(130px) rotate(35deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-325deg)  
+                translateX(130px) rotate(325deg); 
+        } 
+    } 
+    
+        /* --- Venus --- */
+    .info_ven {
+        width: 2.8%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_ven 88s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 130px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_ven { 
+        0% { 
+            transform: rotate(-70deg)  
+                translateX(170px) rotate(-70deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-430deg)  
+                translateX(170px) rotate(430deg); 
+        } 
+    } 
+    
+        /* --- Jorden --- */
+    .info_jor {
+        width: 3.2%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_jor 90s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 155px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_jor { 
+        0% { 
+            transform: rotate(190deg)  
+                translateX(200px) rotate(190deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-170deg)  
+                translateX(200px) rotate(170deg); 
+        } 
+    } 
+    
+        /* --- Mars --- */
+    .info_mar {
+        width: 2.8%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_mar 94s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 180px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_mar { 
+        0% { 
+            transform: rotate(-15deg)  
+                translateX(235px) rotate(-15deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-375deg)  
+                translateX(235px) rotate(375deg); 
+        } 
+    } 
+    
+        /* --- Jupitor --- */
+    .info_jup {
+        width: 7%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_jup 100s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 205px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_jup { 
+        0% { 
+            transform: rotate(135deg)  
+                translateX(270px) rotate(135deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-225deg)  
+                translateX(270px) rotate(225deg); 
+        } 
+    } 
+    
+        /* --- Saturn --- */
+    .info_sat {
+        width: 8%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_sat 110s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 230px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_sat { 
+        0% { 
+            transform: rotate(-130deg)  
+                translateX(305px) rotate(-130deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-490deg)  
+                translateX(305px) rotate(490deg); 
+        } 
+    } 
+    
+        /* --- Uranus --- */
+    .info_ura {
+        width: 4%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_ura 120s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 265px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_ura { 
+        0% { 
+            transform: rotate(75deg)  
+                translateX(345px) rotate(75deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-285deg)  
+                translateX(345px) rotate(285deg); 
+        } 
+    } 
+    
+        /* --- Neptun --- */
+    .info_nep {
+        width: 4%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        animation: rotation_nep 125s infinite linear;
+    }
+    
+        /* --- Roterer fra 0 til 360 grader mod urets retning med en radius på 300px --- */
+        /* --- Ved 0% er der roteret 0 grader og ved 100% er der roteret -360 grader --- */
+    @keyframes rotation_nep { 
+        0% { 
+            transform: rotate(-60deg)  
+                translateX(385px) rotate(-60deg); 
+        } 
+    
+        100% { 
+            transform: rotate(-420deg)  
+                translateX(385px) rotate(420deg); 
+        } 
+    } 
+
+
+
+/* alle sider med tidslinje bar i toppen (ikke optimal løsning men vi kunne ikke få javascripten til at virke som ønsket)*/
+
+.myProgress {
+    width: 100%;
+  }
+  
+  #myBar_solen {
+    width: 1%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_exo {
+    width: 5.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_merkur {
+    width: 10%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_merkur2 {
+    width: 14.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_venus {
+    width: 19%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_jorden {
+    width: 23.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_jorden2 {
+    width: 28%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_rumstation {
+    width: 32.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_mars {
+    width: 37%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_mars2 {
+    width: 41.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_jupiter {
+    width: 46%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_miniquiz1 {
+    width: 50.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_forkert1 {
+    width: 56%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+
+  #myBar_rigtig1 {
+    width: 55%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+
+  #myBar_redning1 {
+    width: 59.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+
+  #myBar_asteroide {
+    width: 64%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_saturn {
+    width: 68.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_uranus {
+    width: 73%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_miniquiz2 {
+    width: 77.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_forkert2 {
+    width: 82%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_rigtig2 {
+    width: 82%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_redning2 {
+    width: 86.5%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_neptun {
+    width: 91%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }
+
+  #myBar_slut {
+    width: 100%;
+    height: 5px;
+    background-color: #6DCAD1;
+  }

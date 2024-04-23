@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/neptun.png">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <script src="keyboard.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Diverse animationer og lyd -->
+    <img id="rocket" src="img/spaceship.svg" alt="rumskib">
+    <audio id="rumskib_lyd" src="audio/impact-6291.mp3"></audio>
+    <audio id="info_lyd" src="audio/cute-level-up-3-189853.mp3"></audio>
+
+<!-- index -->
+    <div id="index">
+        <div id="div_index">
+            <h1 id="overskrift_index">REJSEN TIL NEPTUN</h1>
+            <h2 id="underoverskrift">Klik her for at starte</h2>
+            <img id="afspil1" src="img/afspil.png" alt="afspil">
+        </div>
+    </div>
+
+<!-- exo -->
+<div id="exo">
+    <div class="myProgress">
+        <div id="myBar_exo"></div>
+    </div>
+    <img class="astronaut_exo_slut" src="img/astrunautgamer.svg" alt="astronaut">
+    <img class="trekant_exo" src="img/trekant.png" alt="trekant">
+    <div class="boks_exo">
+        <p class="tekst_exo">
+            Hej
+            <br>
+            Mit navn er Exo
+            <br>
+            Er du klar på et Eventyr?
+            <br>
+            Vores mission er at nå ud til Neptun - den yderste planet i vores solsystem!
+            <br>
+            På vejen vil du møde udfordringer, og du vil blive testet til det yderste, kan du klare det?
+            <br>
+            Over and out</p>
+    </div>
+    <button id="tilbage_btn_exo"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+    <button id="fremad_btn_exo"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+</div>
+
+<!-- solen -->
+<div id="solen">
+    <div class="myProgress">
+        <div id="myBar_solen"></div>
+    </div>
+    <div id="boks_solen">
+        <p id="tekst_solen">AAAH! Det er for varmt, skynd dig videre! <br> 
+        Solen er en stjerne, og dens indre er 15 millioner grader varm!</p>
+    </div>
+    <button id="tilbage_btn_solen"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+    <button id="fremad_btn_solen"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+    <img id="solen_solen" src="img/Sol.png" alt="solen">
+</div>
+
+<!-- merkur -->
+<div id="merkur">
+    <div class="myProgress">
+        <div id="myBar_merkur"></div>
+    </div>
+    <div class="boks_alle">
+        <p class="tekst_alle">Velkommen til Merkur! Kan du ikke tage sydpå på tur, så tag til Merkur. 
+            Her kan der i dagstimerne blive op til 430 ￮C.</p>
+        <img id="fremad_merkur" src="img/fremad.png" alt="fremad">
+        <img id="tilbage_merkur" src="img/tilbage-knap.png" alt="tilbage">
+    </div>
+    <img class="planet_alle" src="img/merkur.png" alt="merkur">
+    <img class="astronaut_mini" src="img/varmexo.svg" alt="astronaut">
+</div>
+
+<!-- merkur2 -->
+<div id="merkur2">
+    <div class="myProgress">
+        <div id="myBar_merkur2"></div>
+    </div>
+    <div class="boks_alle">
+        <p class="tekst_alle">Fun fact om Merkur : 1 dag på Merkur er 59 dage på Jorden.</p>
+    </div>
+    <img class="planet_alle" src="img/merkur.png" alt="merkur">
+    <button id="tilbage_btn_merkur2"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+    <button id="fremad_btn_merkur2"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+    <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+</div>
+
+<!-- asteroide -->
+    <div id="asteroide">
+        <div class="myProgress">
+            <div id="myBar_asteroide"></div>
+        </div>
+        <div class="boks_asteroide">
+            <p class="tekst_asteroide">Wow! Du blev næsten ramt af en asteroide.</p>
+        </div>
+        <button id="tilbage_btn_asteroide"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_asteroide"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+    
+        <img id="a1" src="img/asteroide.png" alt="asteroide">
+        <img id="a2" src="img/asteroide.png" alt="asteroide">
+        <img id="a3" src="img/asteroide.png" alt="asteroide">
+        <img id="a4" src="img/asteroide.png" alt="asteroide">
+        <img id="a5" src="img/asteroide.png" alt="asteroide">
+        <img id="a6" src="img/asteroide.png" alt="asteroide">
+        <img id="a7" src="img/asteroide.png" alt="asteroide">
+        <img id="a8" src="img/asteroide.png" alt="asteroide">
+        <img id="a9" src="img/asteroide.png" alt="asteroide">
+        <img id="a10" src="img/asteroide.png" alt="asteroide">
+        <img id="a11" src="img/asteroide.png" alt="asteroide">
+        <img id="a12" src="img/asteroide.png" alt="asteroide">
+        <img id="a13" src="img/asteroide.png" alt="asteroide">
+        <img id="a14" src="img/asteroide.png" alt="asteroide">
+        <img id="a15" src="img/asteroide.png" alt="asteroide">
+        <div>
+            <img id="rumskib" src="img/spaceship.svg" alt="rumskib">
+        </div>
+        <div class="taleboks_asteroide">
+            <p class="tale_asteroide">Pas på asteroiderne!</p>
+        </div>
+        <img class="trekant_asteroide" src="img/trekant.png" alt="trekant">
+    </div>
+
+<!-- forkert1 -->
+    <div id="forkert1">
+        <div class="myProgress">
+            <div id="myBar_forkert1"></div>
+        </div>
+        <div class="boks_sorthul">
+            <p class="tekst_sorthul">AAH!.... Du endte i et sort hul. Dit svar var forkert.</p>
+        </div>
+        <button id="tilbage_btn_forkert1"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_forkert1"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="sorthul" src="img/sorthul.png" alt="sort hul">
+    </div>
+
+<!-- forkert2 -->
+    <div id="forkert2">
+        <div class="myProgress">
+            <div id="myBar_forkert2"></div>
+        </div>
+        <div class="boks_sorthul">
+            <p class="tekst_sorthul">AAH!.... Du endte i et sort hul. Dit svar var forkert.</p>
+        </div>
+        <button id="tilbage_btn_forkert2"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_forkert2"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="sorthul" src="img/sorthul.png" alt="sort hul">
+    </div>
+
+<!-- jorden -->
+    <div id="jorden">
+        <div class="myProgress">
+            <div id="myBar_jorden"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Velkommen til Jorden! Vores hjemplanet og den eneste planet i vores
+                solsystem, hvor der er blevet fundet liv.</p>
+            <img id="fremad_jorden" src="img/fremad.png" alt="fremad">
+            <img id="tilbage_jorden" src="img/tilbage-knap.png" alt="tilbage">
+        </div>
+        <img class="planet_alle" src="img/jorden.png" alt="jorden">
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- jorden2 -->
+    <div id="jorden2">
+        <div class="myProgress">
+            <div id="myBar_jorden2"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Men der er fundet Exoplaneter lignende Jorden i andre solsystemer,
+                hvor du kan være heldig at møde andet liv i fremtiden. Men pas på! 
+                Jorden er omringet af rumaffald og satellitter.</p>
+            <img id="info_jorden" src="img/info.png" alt="info">
+        </div>
+        <img class="planet_alle" src="img/jorden.png" alt="jorden">
+        <button id="tilbage_btn_jorden2"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_jorden2"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img id="sattelit2" src="img/sattelit2.png" alt="sattelit">
+        <img id="sattelit3" src="img/sattelit3.webp" alt="sattelit">
+        <img id="sattelit4" src="img/sattelit4.png" alt="sattelit">
+        <img id="sattelit4_mini" src="img/sattelit4.png" alt="sattelit">
+        <img id="sattelit5" src="img/sattelit5.png" alt="sattelit">
+        <img id="sattelit6" src="img/sattelit6.webp" alt="sattelit">
+        <img id="sattelitvinge" src="img/sattelitvinge.png" alt="sattelit">
+        <div id="info_exop">
+            <p>Exoplaneter er planeter, som kredser om andre stjerner end Solen. Nogle ligner Jorden, og derfor mistænker vi, at der kan være liv som på Jorden. Vi mener, at der kan være liv på disse planeter, fordi de ligger lige så langt fra deres sol, som Jorden gør fra vores, og derfor gerne skulle have de samme forhold, som her på Jorden.</p> <img id="info_luk" src="img/luk.png" alt="luk">
+        </div>
+    </div>
+
+<!-- jupiter -->
+    <div id="jupiter">
+        <div class="myProgress">
+            <div id="myBar_jupiter"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Velkommen til Jupiter! En gasplanet uden fast overflade, der består af 
+                brint og helium, samt metan, ammoniak og vanddamp. Dette gør det 
+                umuligt at lande på Jupiter, og der har derfor heller aldrig været 
+                mennesker på planeten.</p>
+        </div>
+        <img class="planet_alle" src="img/jupiter.png" alt="jupiter">
+        <button id="tilbage_btn_jupiter"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_jupiter"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- mars -->
+    <div id="mars">
+        <div class="myProgress">
+            <div id="myBar_mars"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Velkommen til Mars! Klik videre og se robotten ‘Spirit’ og dens rejse til Mars.</p>
+            <img id="fremad_mars" src="img/fremad.png" alt="fremad">
+            <img id="tilbage_mars" src="img/tilbage-knap.png" alt="tilbage">
+        </div>
+        <img class="planet_alle" src="img/mars.png" alt="mars">
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- mars2 -->
+    <div id="mars2">
+        <div class="myProgress">
+            <div id="myBar_mars2"></div>
+        </div>
+        <div>
+            <video id="video_mars" controls>
+                <source src="video/motiongraphic.mp4">
+            </video>
+        </div>
+        <img class="planet_alle" src="img/mars.png" alt="mars">
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+        <button id="tilbage_btn_mars2"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_mars2"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+    </div>
+
+<!-- miniquiz1 -->
+    <div id="miniquiz1">
+        <div class="myProgress">
+            <div id="myBar_miniquiz1"></div>
+        </div>
+        <div class="boks_quiz">
+            <h1 class="overskrift_quiz">MINI QUIZ</h1>
+            <p id="spørgsmål_quiz1">Jupiters diameter er et vis gange større end Jordens. <br> Hvor mange gange tror du?</p>
+
+            <form id="quizForm">
+                <div id="svarmuligheder">
+                    <label class="options">
+                        <input type="checkbox" name="q1" value="A"> 10
+                    </label>
+                    <label class="options">
+                        <input type="checkbox" name="q1" value="B"> 23
+                    </label>
+                    <label class="options">
+                        <input type="checkbox" name="q1" value="C"> 11
+                    </label>
+                    <label class="options">
+                        <input type="checkbox" name="q1" value="D"> 32
+                    </label>
+                </div>
+                <div class="button_quiz1_div">
+                    <button type="submit" class="button_quiz1">INDSEND</button>
+                </div>
+            </form>
+        </div>
+        <button id="tilbage_btn_miniquiz1"><img class="fremad_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+    </div>
+
+
+<!-- miniquiz2 -->
+    <div id="miniquiz2">
+        <div class="myProgress">
+            <div id="myBar_miniquiz2"></div>
+        </div>
+        <div class="boks_quiz">
+            <h1 class="overskrift_quiz">MINI QUIZ</h1>
+            <p class="tekst_quiz">Uranus har 27 måner. Hvad hedder Uranus’ største måne?</p>
+            
+            <div class="svar-muligheder">
+                <p>Oberon</p>
+                <p>Titania</p>
+                <p>Umbriel</p>
+                <p>Ariel </p>
+                <p>Miranda</p>
+            </div>
+    
+            <div class="tekstboks">
+                <input id="use-keyboard-input" placeholder="Skriv her...">
+            </div>
+    
+            <div class="button_quiz1_div">
+                <button id="button_quiz2">INDSEND</button>
+            </div>
+        </div>
+        <button id="tilbage_btn_miniquiz2"><img class="fremad_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <script src="script.js" defer></script>
+    </div>
+
+<!-- neptun -->
+    <div id="neptun">
+        <div class="myProgress">
+            <div id="myBar_neptun"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Velkommen til Neptun! Vidste du godt, at Neptun blev fundet ved hjælp af
+                matematikken i 1846? Det er helt vildt! Det er den planet, som ligger
+                længst fra solen, og på dette tidspunkt ikke kunne ses fra Jorden. </p>
+        </div>
+        <img class="planet_alle" src="img/neptun.png" alt="neptun">
+        <button id="tilbage_btn_neptun"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_neptun"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_mini" src="img/einstein.svg" alt="astronaut">
+    </div>
+
+<!-- redning1 -->
+    <div id="redning1">
+        <div class="myProgress">
+            <div id="myBar_redning1"></div>
+        </div>
+        <div class="boks_redning">
+            <p class="tekst_redning">Hurra! Du blev reddet af din makker Exo. Jupiter er 11 gange 
+                større end Jorden og er den største planet i vores solsystem.</p>
+        </div>
+        <div class="taleboks_quiz_redning">
+            <p class="tale_quiz">Bare rolig, jeg har din ryg!</p>
+        </div>
+        <img class="trekant_quiz" src="img/trekant.png" alt="trekant">
+        <button id="tilbage_btn_redning1"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_redning1"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_quiz" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- redning2 -->
+    <div id="redning2">
+        <div class="myProgress">
+            <div id="myBar_redning2"></div>
+        </div>
+        <div class="boks_redning">
+            <p class="tekst_redning">Hurra! Du blev reddet af din makker Exo. Titania er Uranus’ største
+                måne. Den er dog halv så stor som Jordens måne.</p>
+        </div>
+        <div class="taleboks_quiz_redning">
+            <p class="tale_quiz">Bare rolig, jeg har din ryg!</p>
+        </div>
+        <img class="trekant_quiz" src="img/trekant.png" alt="trekant">
+        <button id="tilbage_btn_redning2"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_redning2"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_quiz" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- rigtig1 -->
+    <div id="rigtig1">
+        <div class="myProgress">
+            <div id="myBar_rigtig1"></div>
+        </div>
+        <div class="boks_redning">
+            <p class="tekst_redning">Du svarede rigtigt! Jupiter er 11 gange større end Jorden og er  
+                den største i vores solsystem.</p>
+        </div>
+        <div class="taleboks_quiz_rigtig">
+            <p class="tale_quiz">Viden er magt!</p>
+        </div>
+        <img class="trekant_quiz" src="img/trekant.png" alt="trekant">
+        <button id="tilbage_btn_rigtig1"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_rigtig1"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_quiz" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- rigtig2 -->
+    <div id="rigtig2">
+        <div class="myProgress">
+            <div id="myBar_rigtig2"></div>
+        </div>
+        <div class="boks_redning">
+            <p class="tekst_redning">Du svarede rigtigt! Titania er Uranus’ største måne. Den er dog 
+                halvt så stor som Jordens måne.</p>
+        </div>
+        <div class="taleboks_quiz_rigtig">
+            <p class="tale_quiz">Viden er magt!</p>
+        </div>
+        <img class="trekant_quiz" src="img/trekant.png" alt="trekant">
+        <button id="tilbage_btn_rigtig2"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_rigtig2"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_quiz" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- rumstation -->
+    <div id="rumstation">
+        <div class="myProgress">
+            <div id="myBar_rumstation"></div>
+        </div>
+        <div class="boks_rumstation">
+            <p class="tekst_rumstation">Wow! Den internationale rumstation! Vink til de sejeste astronauter, der er i fuld gang
+                med forskning af sundhedsvidenskab, biologi, fysiologi, fysik-og materialevidenskab 
+                og selfølgelig Jorden og rummet. </p>
+        </div>
+        <img id="rumstation1" src="img/rumstationudenbaggrund.png" alt="rumstation">
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+        <button id="tilbage_btn_rumstation"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_rumstation"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+    </div>
+
+<!-- saturn-->
+    <div id="saturn">
+        <div class="myProgress">
+            <div id="myBar_saturn"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Velkommen til Saturn! Vidste du godt, at Saturn har 12 ringe, som består
+                af isklumper, kometdele, asteroider og støv? Selvom Saturn har 12 ringe,
+                kan kun 3 af dem ses fra Jorden.
+                </p>
+        </div>
+        <img class="planet_alle" src="img/saturn.png" alt="jupiter">
+        <button id="tilbage_btn_saturn"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_saturn"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+<!-- slut -->
+    <div id="slut">
+        <div class="myProgress">
+            <div id="myBar_slut"></div>
+        </div>
+        <img class="astronaut_exo_slut" src="img/astrunautgamer.svg" alt="astronaut">
+        <img class="trekant_exo" src="img/trekant.png" alt="trekant">
+        <div class="boks_exo">
+            <p class="tekst_exo">
+                TILLYKKE! Du gennemførte rejsen! 
+                <br>
+                Det har været en fornøjelse at flyve med dig.
+                <br>
+                Flyv nu videre ud i rummet og lær noget mere om vores fascinerende univers!
+        </div>
+        <button id="fremad_btn_slut"><img class="fremad_alle" src="img/tilbage.png" alt="fremad"></button>
+    </div>
+
+<!-- solsystem -->
+    <div id="solsystem1"></div>
+
+<!-- uranus -->
+    <div id="uranus">
+        <div class="myProgress">
+            <div id="myBar_uranus"></div>
+        </div>
+        <div class="boks_alle">
+            <p class="tekst_alle">Velkommen til Uranus! Elsker du også de kolde friske vinterdage? Så er
+                Uranus stedet for dig. Her kommer temperaturen helt ned på -224 ￮C.
+                </p>
+        </div>
+        <img class="planet_alle" src="img/uranus.png" alt="uranus">
+        <button id="tilbage_btn_uranus"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_uranus"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_mini" src="img/frossetexo.svg" alt="astronaut">
+    </div>
+
+<!-- venus -->
+    <div id="venus">
+        <div class="myProgress">
+            <div id="myBar_venus"></div>
+        </div>
+        <div class="boks_venus">
+            <p class="tekst_alle">Velkommen til Venus! Vidste du, at 1 dag på Venus er 243 dage på Jorden!</p>
+            <div class="video">
+                <video autoplay controls loop>
+                    <source src="video/sun.mp4">
+                </video>
+                <video autoplay controls loop>
+                    <source src="video/hurtigsol.mp4">
+                </video>
+            </div>
+            <div id="tekst_venus">
+                <p>Venus</p>
+                <p>Jorden</p>
+            </div>
+        </div>
+        <img class="planet_alle" src="img/venus.png" alt="venus">
+        <button id="tilbage_btn_venus"><img class="tilbage_alle" src="img/tilbage-knap.png" alt="tilbage"></button>
+        <button id="fremad_btn_venus"><img class="fremad_alle" src="img/fremad.png" alt="fremad"></button>
+        <img class="astronaut_mini" src="img/astrunautgamer.svg" alt="astronaut">
+    </div>
+
+    <!-- Infographic/solsystem -->
+    <div id="solsystem">
+        <div id="solsystem_container">
+            
+            <div id="start_boks">
+                <h1 id="start">Start</h1>
+            </div>
+
+            <div id="mini_pil_con">
+                <img id="mini_pil" src="img/minipil.png" alt="pil">
+                <p id="tekst_info"> For at starte din rejse, tryk på solen eller på den enkelte planet for at lære mere.</p>
+            </div>
+
+            <img id="lyd" src="img/lyd.png" alt="lyd_på">
+            <img id="sprog" src="img/sprog.png" alt="sprog_dk">
+
+            <img id="lyd_fra" src="img/lyd_streg.png" alt="lyd_fra">
+            <img id="sprog_en" src="img/sprog_en.png" alt="sprog_en">
+            
+            
+            <!-- Ringe -->
+            <div class="info_ringe">
+                <img class="info_otteringe" src="img/otteringe.png" alt="">
+            </div>
+
+            <!-- Sol -->
+            <div class="info_solsystem">
+                <img class="info_sol" src="img/Sol.png" alt="Solen">
+            </div>
+
+            <!-- Merkur -->
+            <div class="info_solsystem">
+                <img id="info_mer" src="img/merkur.png" alt="Merkur">
+            </div>
+
+            <!-- Venus -->
+            <div class="info_solsystem">
+                <img id="venus_info" class="info_ven" src="img/venus.png" alt="Venus">
+            </div>
+
+            <!-- Jorden -->
+            <div class="info_solsystem">
+                <img id="jorden_info" class="info_jor" src="img/jorden.png" alt="Jorden">
+            </div>
+
+            <!-- Mars -->
+            <div class="info_solsystem">
+                <img id="mars_info" class="info_mar" src="img/mars.png" alt="Mars">
+            </div>
+
+            <!-- Jupiter -->
+            <div class="info_solsystem">
+                <img id="jupiter_info" class="info_jup" src="img/jupiter.png" alt="Jupiter">
+            </div>
+
+            <!-- Saturn -->
+            <div class="info_solsystem">
+                <img id="saturn_info" class="info_sat" src="img/saturn.png" alt="Saturn">
+            </div>
+
+            <!-- Uranus -->
+            <div class="info_solsystem">
+                <img id="uranus_info" class="info_ura" src="img/uranus.png" alt="Uranus">
+            </div>
+
+            <!-- Neptun -->
+            <div class="info_solsystem">
+                <img id="neptun_info" class="info_nep" src="img/neptun.png" alt="Neptun">
+            </div>
+        </div>
+        
+<!-- Infographic indhold -->
+        <div id="merkur_1">
+            <div class="boks_info">
+                <p class="planet_navn">Merkur</p>
+                <p class="tekst_info">Merkur er den mindste planet i Solsystemet og er også den planet, 
+                    der er tættest på Solen. Den er nemlig kun lidt større end vores Måne og befinder sig 
+                    “kun” 58 millioner kilometer væk fra solen i gennemsnit.</p>
+                <img id="tilbage_info" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_info" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/merkur.png" alt="merkur">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="merkur_2">
+            <div class="boks_info">
+                <p class="planet_navn">Merkur</p>
+                <p class="tekst_info">Det er også svært at blive klogere på Merkur netop pga. 
+                    dens korte afstand til solen - for Hubble teleskopet, der kredser om Jorden, 
+                    kan ikke tåle at kigge i retningen af Merkur pga. lyset og varmen, og fra Jorden 
+                    er det svært at se planeten!</p>
+                <img id="tilbage_info_mer2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_info_mer2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/merkur.png" alt="merkur">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="merkur_3">
+            <div class="boks_info">
+                <p class="planet_navn">Merkur</p>
+                <p class="tekst_info">Et år på Merkur varer kun 88 dage, hvilket er dobbelt 
+                    så hurtigt som antallet af Jord-døgn mellem hver solopgang på den selv samme 
+                    planet - nemlig 176 dage!</p>
+                <img id="tilbage_info_mer3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/merkur.png" alt="merkur">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="venus_1">
+            <div class="boks_info">
+                <p class="planet_navn">Venus</p>
+                <p class="tekst_info">Venus’ atmosfære består nærmest kun af CO2, hvilket gør planeten
+                    god til at holde på varmen og derfor har en overfladetemperatur på 480 grader!</p>
+                <img id="tilbage_ven1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_ven1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/venus.png" alt="venus">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="venus_2">
+            <div class="boks_info">
+                <p class="planet_navn">Venus</p>
+                <p class="tekst_info">Det regner faktisk også med svovlsyre på Venus, 
+                    men fordi det er så varmt, når regnen aldrig ned at ramme planeten.</p>
+                <img id="tilbage_ven2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_ven2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/venus.png" alt="venus">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="venus_3">
+            <div class="boks_info">
+                <p class="planet_navn">Venus</p>
+                <p class="tekst_info">Venus er den klareste planet på vores himmel, 
+                    da dens svovlsyre-skylag reflekterer Solens lys effektivt. Man kan 
+                    faktisk ikke se Venus’ overflade direkte pga. dette skylag.</p>
+                <img id="tilbage_ven3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/venus.png" alt="venus">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem2" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="jorden_1">
+            <div class="boks_info">
+                <p class="planet_navn">Jorden</p>
+                <p class="tekst_info">Jorden ligger som den tredje planet væk fra Solen, 
+                    og denne afstand er bl.a. med til at sikre flydende vand - og dermed liv. 
+                    Her er nemlig hverken for varmt eller for koldt.
+                </p>
+                <img id="tilbage_jor1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_jor1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/jorden.png" alt="jorden">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="jorden_2">
+            <div class="boks_info">
+                <p class="planet_navn">Jorden</p>
+                <p class="tekst_info">Jorden er den eneste planet, hvor man med sikkerhed ved, 
+                    at der findes liv. Man har dog fundet exoplaneter (planeter, der kredser om 
+                    andre stjerner end vores Sol), som, med den rigtige afstand til stjernerne, 
+                    kunne minde om Jorden.</p>
+                <img id="tilbage_jor2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_jor2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/jorden.png" alt="jorden">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="jorden_3">
+            <div class="boks_info">
+                <p class="planet_navn">Jorden</p>
+                <p class="tekst_info">Selvom man i dag ser exoplaneter som værende ret almindelige, 
+                    opdagede man først en exoplanet for første gang i 1995 - altså kun næsten 30 år siden.</p>
+                <img id="tilbage_jor3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/jorden.png" alt="jorden">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem3" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div  id="mars_1">
+            <div class="boks_info">
+                <p class="planet_navn">Mars</p>
+                <p class="tekst_info">Mars er også kendt som “Den røde planet”, og grunden til, 
+                    at den er rød er, at den indeholder meget jern. Der kan også opstå støvstorme, 
+                    som kan dække hele planeten.</p>
+                <img id="tilbage_mar1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_mar1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/mars.png" alt="mars">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="mars_2">
+            <div class="boks_info">
+                <p class="planet_navn">Mars</p>
+                <p class="tekst_info">Mars har næsten ikke nogen atmosfære, så selvom man har fundet 
+                    en smule flydende vand på planeten, mener man, at der har været mere - 
+                    det er blot fordampet. Ved Mars’ poler er der dog iskapper.</p>
+                <img id="tilbage_mar2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_mar2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/mars.png" alt="mars">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="mars_3">
+            <div class="boks_info">
+                <p class="planet_navn">Mars</p>
+                <p class="tekst_info">Man har gennem årene sendt rumfartøjer forbi, 
+                    i kredsløb eller fået til at lande på Mars for at undersøge planeten. 
+                    Der arbejdes også på at sende et hold astronauter til Mars!</p>
+                <img id="tilbage_mar3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/mars.png" alt="mars">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem4" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="jupiter_1">
+            <div class="boks_info">
+                <p class="planet_navn">Jupiter</p>
+                <p class="tekst_info">Jupiter er den største planet i Solsystemet, 
+                    en såkaldt “gaskæmpe”, men i midten af den, er der muligvis en fast kerne 
+                    på størrelse med Jorden! Jupiter har 95 desuden måner, og de måner minder 
+                    faktisk mere om Jorden end om Jupiter.</p>
+                <img id="tilbage_jup1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_jup1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/jupiter.png" alt="jupiter">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="jupiter_2">
+            <div class="boks_info">
+                <p class="planet_navn">Jupiter</p>
+                <p class="tekst_info">Et år på Jupiter svarer dog til 12 år på Jorden, 
+                    og det eneste synlige af planeten fra Jorden er dens øverste lag af atmosfæren - 
+                    en atmosfære hvis vinde og elektriske storme er stærke nok til at ødelægge Jorden.</p>
+                <img id="tilbage_jup2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_jup2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/jupiter.png" alt="jupiter">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="jupiter_3">
+            <div class="boks_info">
+                <p class="planet_navn">Jupiter</p>
+                <p class="tekst_info">Den store røde plet på Jupiter er faktisk en stor storm - 
+                    en storm, der er tre gange så stor som Jorden!</p>
+                <img id="tilbage_jup3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/jupiter.png" alt="jupiter">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem5" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="saturn_1">
+            <div class="boks_info">
+                <p class="planet_navn">Saturn</p>
+                <p class="tekst_info">Saturn er også en gaskæmpe, og dens ringe er de klareste 
+                    af alle ringe i Solsystemet. Ringene består af utallige stykker is og sten.</p>
+                <img id="tilbage_sat1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_sat1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/saturn.png" alt="saturn">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="saturn_2">
+            <div class="boks_info">
+                <p class="planet_navn">Saturn</p>
+                <p class="tekst_info">Saturn er næsten på størrelse med Jupiter, 
+                    og her er der også altid storme - storme, der kan vare i flere måneder, 
+                    da planeten roterer hurtigt om sig selv. En dag på Saturn varer nemlig 
+                    kun 10,7 timer - et Saturn-år varer dog 29,4 Jord-år.</p>
+                <img id="tilbage_sat2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_sat2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/saturn.png" alt="saturn">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="saturn_3">
+            <div class="boks_info">
+                <p class="planet_navn">Saturn</p>
+                <p class="tekst_info">Saturn har 146 måner. Størrelserne på dem varierer 
+                    fra at være større end Merkur til så små som en sportsarena.</p>
+                <img id="tilbage_sat3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/saturn.png" alt="saturn">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem6" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="uranus_1">
+            <div class="boks_info">
+                <p class="planet_navn">Uranus</p>
+                <p class="tekst_info">Uranus er den syvende planet fra Solen, 
+                    og den kan også kun lige anes med det blotte øje fra Jorden.</p>
+                <img id="tilbage_ura1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_ura1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/uranus.png" alt="uranus">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="uranus_2">
+            <div class="boks_info">
+                <p class="planet_navn">Uranus</p>
+                <p class="tekst_info">Det blev også først opdaget i 1781, at Uranus ikke var en stjerne, 
+                    og der skulle gå to år mere, før man fastslog, at det var en planet.</p>
+                <img id="tilbage_ura2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_ura2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/uranus.png" alt="uranus">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="uranus_3">
+            <div class="boks_info">
+                <p class="planet_navn">Uranus</p>
+                <p class="tekst_info">Da der er metangas i Uranus’ atmosfære, der absorberer rødt lys, 
+                    har planeten en blågrøn farve og reflekterer blåt lys.</p>
+                <img id="tilbage_ura3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/uranus.png" alt="uranus">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem7" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="neptun_1">
+            <div class="boks_info">
+                <p class="planet_navn">Neptun</p>
+                <p class="tekst_info">Neptun er den ottende og yderste planet i vores Solsystem - 
+                    man har brug for et teleskop for at kunne få øje på den fra jorden.</p>
+                <img id="tilbage_nep1" src="img/tilbage.png" alt="tilbage">
+                <img id="fremad_nep1" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/neptun.png" alt="neptun">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="neptun_2">
+            <div class="boks_info">
+                <p class="planet_navn">Neptun</p>
+                <p class="tekst_info">På Neptun blæser der de mest kraftfulde vinde i hele Solsystemet 
+                    med målte vindhastigheder op til 2400 kilometer i timen!</p>
+                <img id="tilbage_nep2" src="img/tilbage-knap.png" alt="tilbage">
+                <img id="fremad_nep2" src="img/fremad.png" alt="fremad">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/neptun.png" alt="neptun">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+
+        <div id="neptun_3">
+            <div class="boks_info">
+                <p class="planet_navn">Neptun</p>
+                <p class="tekst_info">Neptun er, ligesom Uranus, blålig. Neptuns farve er dog 
+                    endnu mere intens, da lyset trænger dybere ind i dens atmosfære.</p>
+                <img id="tilbage_nep3" src="img/tilbage-knap.png" alt="tilbage">
+            </div>
+            <div class="planet_container">
+                <img class="planet_info" src="img/neptun.png" alt="neptun">
+            </div>
+            <div class="tilbage_solsystem_container">
+                <img id="tilbage_solsystem8" src="img/tilbage.png" alt="tilbage">
+            </div>
+            <img class="baggrund_info" src="img/space.jpg" alt="space">
+        </div>
+    </div>
+</body>
+</html>
